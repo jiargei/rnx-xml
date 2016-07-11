@@ -1,0 +1,9 @@
+<!ELEMENT stations (station*)>
+    <!ATTLIST stations xmlns:xsi CDATA #IMPLIED>
+    <!ATTLIST stations xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT station (year*)>
+    <!ATTLIST station StationID ID #REQUIRED>
+<!ELEMENT year (doys*)>
+    <!ATTLIST year YearID CDATA #REQUIRED>
+<!ELEMENT doys (#PCDATA)>
+    <!ATTLIST doys processed CDATA #IMPLIED>

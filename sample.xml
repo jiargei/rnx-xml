@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE stations SYSTEM "copies.dtd">
+<stations 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="copies.xsd"
+>
+    <station StationID="ONSA">
+    </station>
+    <station StationID="GRAZ"/>
+    <station StationID="PAKO">
+        <year YearID="2016">
+            <doys>105,106</doys>
+        </year>
+        <year YearID="2015"/>
+    </station>
+    <station StationID="WIEN">
+        <year YearID="2015">
+            <doys processed="1">178,180</doys>
+            <doys>201,202</doys>
+        </year>
+        <year YearID="2016">
+            <doys>178,180</doys>
+            <doys>201,202</doys>
+        </year>
+    </station>
+    <station StationID="TRBG">
+        <year YearID="2016">
+            <doys>178,180</doys>
+            <doys>201,202</doys>
+        </year>
+    </station>
+    <station StationID="PFAN">
+        <year YearID="2016">
+            <doys>178,180</doys>
+            <doys>201,202</doys>
+        </year>
+    </station>
+</stations>
+

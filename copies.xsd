@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="stations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="station" type="StationType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="Station">
+            <xs:selector xpath="stations/station"/>
+            <xs:field xpath="@StationID"/>
+        </xs:key>
+    </xs:element>
+
+    <xs:complexType name="YearType">
+        <xs:sequence>
+            <xs:element name="doys" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="YearID" type="xs:int"/>
+    </xs:complexType>
+    
+    <xs:complexType name="StationType">
+        <xs:sequence>
+            <xs:element name="year" type="YearType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="StationID" type="xs:token"/>
+    </xs:complexType>
+</xs:schema>
